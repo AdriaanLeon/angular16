@@ -5,16 +5,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FatherComponent } from './father/father.component';
 import { HijoComponent } from './hijo/hijo.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HermanoComponent } from './hermano/hermano.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FatherComponent,
-    HijoComponent
+    HijoComponent,
+    HermanoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
